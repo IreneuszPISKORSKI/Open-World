@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+
+
+h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 100px;
+    margin-top: 0;
+    text-align: center;
+    color:rgba(29, 29, 85, 0.87);
+    
+}
+h2 {
+    font-family:'Quintessential', cursive;
+    text-align: center;
+    font-size: 100px;
+    color: rgba(29, 29, 85, 0.87);
+}
+
+.lien {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lien_support img {
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:100px;
+  
+    width: 250px;
+    height: 250px;
+
+}
+
+.lien_eco img {
+           -moz-border-radius:7px;
+        -webkit-border-radius:7px;
+        border-radius:200px;
+        
+    width: 250px;
+    height: 250px;
+}
+
+.lien_nume img {
+
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:200px;
+    width: 250px;
+    height: 250px;
+}
+body{
+    background-image:url(/Accueil_img/fond_accueil3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 921px;
+    
+}
+
+h3{
+    margin-left: 65px;
+    font-size: 30px;
+    color: white;
+    font-family:'Quintessential', cursive;
+
+
+}
+
+a,h3{
+    text-decoration: none;
+}
+
+.ecologie1{
+
+    margin-left: 72px;
+}
