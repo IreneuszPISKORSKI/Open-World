@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: no-repeat url(images/wallpaper-ecologie.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: #204E4A;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1,
+p,
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: black 1px 0px 10px;
+}
+
+
+.intro,
+.text 
+{
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.title {
+    text-align: center;
+}
+
+.ligne1,
+.ligne2 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    width: 60vw;
+    background-color: #2E933C;
+    flex-direction: column;
+
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5em;
+}
+
+.item {
+    transition: transform 0.5s;
+    border: #a8855d solid 6px;
+    background-color: #ECBA82;
+}
+
+
+.items:hover .item-effect:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.items:hover .item-effect:not(:hover)::after {
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.item-effect {
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.item:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.video {
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+}
+
+iframe {
+    border: none;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    display: flex;
+    width: 60vw;
+    margin-bottom: 5px;
+}
+
+.posFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer {
+    background-color: #204E4A;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link {
+    color: white;
+    margin-right: 10px;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+    margin-block-end: 3px;
+}
+
+li {
+    display: inline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 0 15px;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+
+.button-container a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 7vw;
+    height: 5;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+}
+
+li:last-child a {
+    margin-right: 0;
+}
+
+.button-container a:link,
+a:visited,
+a:focus {
+    background: linear-gradient(60deg, rgb(7, 143, 0), rgb(9, 255, 0));
+}
+
+.button-container a:hover {
+    background: linear-gradient(60deg, rgb(255, 255, 255), rgb(183, 255, 180));
+    color: green;
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+}
+
+.button-container a:active {
+    background: rgb(3, 102, 0);
+    color: white;
+}
+
+#menu {
+    top: 0px;
+    right: 1px;
+    width: 450px;
+    margin-top: 0;
+    padding: 0;
+    z-index: 2;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    border-right: solid black 1px;
+}
+
+#menu li {
+    flex: 1;
+    border: solid black ;
+    border-width: 1px 0 1px 1px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#menu li a:link,
+#menu li a:visited {
+    text-decoration: none;
+    color: white;
+    padding-top: 0;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+#menu li a span {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (hover: hover) {
+    #menu li a span {
+        transform: translateY(100px);
+        transition: 0.4s;
+    }
+
+    #menu:hover span {
+        transform: translateY(0);
+    }
+
+    #menu li:nth-child(1) span {
+        transition-delay: 0.0s;
+        background: #297045;
+    }
+
+    /* #menu li:nth-child(2) span {
+        transition-delay: 0.05s;
+        background: #2e933c;
+    } */
+
+    #menu li:nth-child(2) span {
+        transition-delay: 0.10s;
+        background: #52b788;
+    }
+
+    #menu li:nth-child(3) span {
+        transition-delay: 0.15s;
+        background: #79b473;
+    }
+
+}
+
+#menu li:nth-child(1) {
+    background: #297045;
+}
+
+/* #menu li:nth-child(2) {
+    background: #2e933c;
+} */
+
+#menu li:nth-child(2) {
+    background: #52b788;
+}
+
+#menu li:nth-child(3) {
+    background: #79b473;
+}
+
+
+
+#menu li a:hover {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    text-decoration: underline;
+}
+
+
+.menu_2 {
+    position: absolute;
+    top: 3px;
+    text-align: center;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .item-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+} */

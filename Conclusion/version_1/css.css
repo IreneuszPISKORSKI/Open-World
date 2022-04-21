@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 1%;
+}
+video{
+    width: 88%;  
+}
