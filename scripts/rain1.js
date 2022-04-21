@@ -1,5 +1,5 @@
-var canvas;
-var img;
+let canvas;
+let img;
 let t = 0; // time variable
 
 
@@ -12,7 +12,7 @@ function setup() {
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
   noStroke();
-  fill(255, 2255, 255);
+  fill(255, 255, 255);
 }
 
 function draw() {
