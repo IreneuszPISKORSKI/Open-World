@@ -4,7 +4,7 @@ let t = 0; // time variable
 
 
 function preload() {
-  img = loadImage('../Accueil_img/fond_accueil3.jpg');
+  img = loadImage('Accueil_img/fond_accueil3.jpg');
 }
 
 function setup() {
