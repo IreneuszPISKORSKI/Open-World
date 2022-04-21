@@ -123,7 +123,7 @@ iframe {
 .video-container {
     display: flex;
     width: 60vw;
-    margin-bottom: 5px;
+    justify-content: center;
 }
 
 .posFooter {
